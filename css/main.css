@@ -59,6 +59,23 @@ body {
     font-size: 20px;
 }
 
+.section-title{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.section-description{
+    font-size: 18px;
+    color: #737779;
+}
+.section-description > a {
+    color:#ea1e63;
+    text-decoration: none;
+}
+.section-description > a:hover {
+    color: #c31851;
+    text-decoration: underline;
+}
+
 @media (max-width: 1100px) {
     .container > .row {
         width: 800px;
