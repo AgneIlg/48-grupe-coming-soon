@@ -76,6 +76,36 @@ body {
     text-decoration: underline;
 }
 
+footer {
+    padding-top: 0;
+}
+
+.socials.row {
+  
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.socials > a {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.socials > a:hover {
+    background-color: #fff;
+    color: #03a9f4;
+    transition: all 1s;
+
+}
+
 .footer-bottom{
     text-align: center;
 
