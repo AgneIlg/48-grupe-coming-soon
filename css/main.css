@@ -15,6 +15,8 @@ body {
     background-color: #03a9f4;
 }
 
+/* LAYOUT */
+
 .container {
     width: 100%;
     padding: 4rem 0;
@@ -34,6 +36,9 @@ body {
 }
 
 .container .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
     width: 50%;
 }
 .container .column.short {
@@ -41,34 +46,46 @@ body {
     margin-left: auto;
 }
 
+/* HERO */
+
 .hero {
+    min-height: 100vh;
+    background-image: url(../img/coming-soon-wide.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
     text-align: center;
 }
-.hero > .logo {
+.hero .logo {
     height: 2.5rem;
     margin-bottom: 1.25rem;
 }
-.hero > .main-title {
+.hero .main-title {
     font-size: 5rem;
 }
-.hero > .description {
+.hero .description {
     font-size: 1.25rem;
 }
 
-.section-title{
+/* CONTENT */
+
+.section-title {
     font-size: 1.25rem;
     text-transform: uppercase;
 }
-.section-description{
+.section-description {
     font-size: 1.1rem;
     color: #737779;
 }
 .section-description > a {
-    color:#ea1e63;
+    color: #ea1e63;
     text-decoration: none;
 }
 .section-description > a:hover {
@@ -76,7 +93,9 @@ body {
     text-decoration: underline;
 }
 
-footer {
+/* FOOTER */
+
+footer.container {
     padding-top: 0;
 }
 
@@ -86,7 +105,6 @@ footer {
     padding: 1.25rem 0;
     border-bottom: 0.1rem solid #fff;
 }
-
 .socials > a {
     width: 2.4em;
     height: 2.4em;
@@ -96,42 +114,39 @@ footer {
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
+    /* transition: background-color 1s, color 15s; */
     transition: all 0.3s;
 }
-
 .socials > a:hover {
     background-color: #fff;
     color: #03a9f4;
     transition: all 1s;
-
 }
 
-.footer-bottom{
+.footer-bottom {
     text-align: center;
-
 }
 
-footer.logo {
+footer .logo {
     height: 2.5rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.9rem;
 }
-
 footer p {
-    font-size: 1.12rem;
-    line-height: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
     color: #fffb;
 }
 footer p > a {
     color: #fff;
     text-decoration: none;
 }
-
-footer p > a :hover {
-text-decoration: underline;
+footer p > a:hover {
+    text-decoration: underline;
 }
 
+/* RESPONSIVE */
 
-@media (max-width: 68rem) {
+@media (max-width: 70rem) {
     .container > .row {
         width: 50rem;
         margin: 0 calc(50% - 25rem);
