@@ -18,15 +18,15 @@
 .clock > .time > .label {
     font-size: 0.8rem;
     text-transform: uppercase;
-    
 }
 
-@media(max-width: 700px) {
+@media (max-width: 700px) {
     .clock > .time {
         width: 50%;
     }
 }
-@media(max-width: 360px) {
+
+@media (max-width: 360px) {
     .clock > .time {
         width: 100%;
     }
